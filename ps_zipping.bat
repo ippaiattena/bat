@@ -1,1 +1,1 @@
-PowerShell Compress-Archive -Path 保存元PATH -DestinationPath ジップPATH
+PowerShell Compress-Archive -Path FILE_PATH -DestinationPath ZIP_PATH
