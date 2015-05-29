@@ -5,8 +5,9 @@ cd C:\Program Files\HandBrakeCLI
 setlocal enabledelayedexpansion
 
 set IDIR=C:\Users\ippaiattena\Videos\LiveCam
-set ODIR=C:\Users\ippaiattena\OneDrive\LiveCam\Videos\%DATE:~-10,4%%DATE:~-5,2%%DATE:~-2%
-if not exist %ODIR% (mkdir %ODIR%)
+rem set ODIR=C:\Users\ippaiattena\OneDrive\LiveCam\Videos\%DATE:~-10,4%%DATE:~-5,2%%DATE:~-2%
+set ODIR=C:\Users\ippaiattena\Pictures\LiveCam
+rem if not exist %ODIR% (mkdir %ODIR%)
 
 for /f "usebackq" %%i in (`dir %IDIR% /B *.wmv`) do (
 set IFILE=%%i
