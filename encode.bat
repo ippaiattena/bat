@@ -6,7 +6,8 @@ setlocal enabledelayedexpansion
 
 set IDIR=C:\Users\ippaiattena\Videos\LiveCam
 rem set ODIR=C:\Users\ippaiattena\OneDrive\LiveCam\Videos\%DATE:~-10,4%%DATE:~-5,2%%DATE:~-2%
-set ODIR=C:\Users\ippaiattena\Pictures\LiveCam
+rem set ODIR=C:\Users\ippaiattena\Pictures\LiveCam
+set ODIR=C:\Users\ippaiattena\WatchVideo
 rem if not exist %ODIR% (mkdir %ODIR%)
 
 for /f "usebackq" %%i in (`dir %IDIR% /B *.wmv`) do (
