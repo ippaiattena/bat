@@ -1,8 +1,8 @@
 @echo off
 
-taskkill /im "Google Photos Backup.exe"
+taskkill /f /im "Google Photos Backup.exe"
 
-timeout 30
+timeout 20
 
 cd C:\Program Files\HandBrakeCLI
 
@@ -32,8 +32,6 @@ del %IDIR%\!IFILE!
 )
 
 endlocal
-
-timeout 30
 
 start "" "C:\Users\ippaiattena\AppData\Local\Programs\Google\Google Photos Backup\Google Photos Backup.exe"
 
