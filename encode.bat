@@ -1,5 +1,9 @@
 @echo off
 
+taskkill /im "Google Photos Backup.exe"
+
+timeout 30
+
 cd C:\Program Files\HandBrakeCLI
 
 setlocal enabledelayedexpansion
@@ -10,6 +14,16 @@ rem set ODIR=C:\Users\ippaiattena\Pictures\LiveCam
 set ODIR=C:\Users\ippaiattena\Capture
 rem if not exist %ODIR% (mkdir %ODIR%)
 
+for /f "usebackq" %%i in (`dir %ODIR% /B *.mp4`) do (
+set IFILE=%%i
+del %ODIR%\!IFILE!
+)
+
+for /f "usebackq" %%i in (`dir %ODIR% /B *.jpg`) do (
+set IFILE=%%i
+del %ODIR%\!IFILE!
+)
+
 for /f "usebackq" %%i in (`dir %IDIR% /B *.wmv`) do (
 set IFILE=%%i
 set OFILE=!IFILE:wmv=mp4!
@@ -18,3 +32,9 @@ del %IDIR%\!IFILE!
 )
 
 endlocal
+
+timeout 30
+
+start "" "C:\Users\ippaiattena\AppData\Local\Programs\Google\Google Photos Backup\Google Photos Backup.exe"
+
+exit
