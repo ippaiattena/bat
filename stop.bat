@@ -1,6 +1,6 @@
 @echo off
 
-cd "C:\Program Files (x86)\Daddy\LiveCapture3"
+cd "C:\Program Files\Daddy\LiveCapture3"
 
 ExtCap stop 0
 

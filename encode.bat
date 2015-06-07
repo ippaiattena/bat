@@ -8,10 +8,10 @@ cd C:\Program Files\HandBrakeCLI
 
 setlocal enabledelayedexpansion
 
-set IDIR=C:\Users\ippaiattena\Videos
-rem set ODIR=C:\Users\ippaiattena\OneDrive\LiveCam\Videos\%DATE:~-10,4%%DATE:~-5,2%%DATE:~-2%
-rem set ODIR=C:\Users\ippaiattena\Pictures\LiveCam
-set ODIR=C:\Users\ippaiattena\Capture
+set IDIR=C:\Users\null\Videos
+rem set ODIR=C:\Users\null\OneDrive\LiveCam\Videos\%DATE:~-10,4%%DATE:~-5,2%%DATE:~-2%
+rem set ODIR=C:\Users\null\Pictures\LiveCam
+set ODIR=C:\Users\null\Capture
 rem if not exist %ODIR% (mkdir %ODIR%)
 
 for /f "usebackq" %%i in (`dir %ODIR% /B *.mp4`) do (
@@ -33,6 +33,6 @@ del %IDIR%\!IFILE!
 
 endlocal
 
-start "" "C:\Users\ippaiattena\AppData\Local\Programs\Google\Google Photos Backup\Google Photos Backup.exe"
+start "" "C:\Users\null\AppData\Local\Programs\Google\Google Photos Backup\Google Photos Backup.exe"
 
 exit
