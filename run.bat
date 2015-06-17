@@ -1,20 +1,20 @@
 @echo off
 
-cd C:\Users\null\OneDrive\Bat
-
-if exist run.png (
-
-del C:\Users\null\OneDrive\Bat\run.png
+cd C:\Users\null\Dropbox\Bat
 
 if exist run.txt (
 
-del C:\Users\null\OneDrive\Bat\run.txt
+del run.txt
+
+if exist start.txt (
+
+del start.txt
 
 start stop.bat
 
 ) else (
 
-echo hello >> run.txt
+echo hello >> start.txt
 
 start start.bat
 
@@ -22,17 +22,17 @@ start start.bat
 
 )
 
-if exist encode.png (
+if exist encode.txt (
 
-del C:\Users\null\OneDrive\Bat\encode.png
+del encode.txt
 
 start encode.bat
 
 )
 
-if exist retry.png (
+if exist retry.txt (
 
-del C:\Users\null\OneDrive\Bat\retry.png
+del retry.txt
 
 start retry.bat
 
