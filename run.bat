@@ -22,6 +22,22 @@ start start.bat
 
 )
 
+if exist beginning.txt (
+
+del beginning.txt
+
+start beginning.bat
+
+)
+
+if exist end.txt (
+
+del end.txt
+
+start end.bat
+
+)
+
 if exist encode.txt (
 
 del encode.txt
@@ -35,6 +51,14 @@ if exist retry.txt (
 del retry.txt
 
 start retry.bat
+
+)
+
+if exist clear.txt (
+
+del clear.txt
+
+start clear.bat
 
 )
 
