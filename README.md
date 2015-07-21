@@ -1,2 +1,2 @@
 # bat
-windows command bat
+personal windows command bat
