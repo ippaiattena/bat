@@ -5,7 +5,7 @@ cd C:\HandBrakeCLI
 setlocal enabledelayedexpansion
 
 set IDIR=C:\Users\null\Videos
-set ODIR=C:\Users\null\Capture
+set ODIR=C:\Users\null\Pictures\Capture
 
 rem if not exist %ODIR% (mkdir %ODIR%)
 
@@ -27,5 +27,7 @@ del %IDIR%\!IFILE!
 )
 
 endlocal
+
+echo %DATE% %TIME% encode.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
 
 exit

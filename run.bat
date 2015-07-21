@@ -1,64 +1,63 @@
 @echo off
 
-cd C:\Users\null\Dropbox\Bat
+cd C:\Users\null\Dropbox\Programs\Bat
 
-if exist run.txt (
+if exist C:\Users\null\Dropbox\Programs\Data\run.txt (
 
-del run.txt
+del C:\Users\null\Dropbox\Programs\Data\run.txt
 
-if exist start.txt (
+if exist C:\Users\null\Dropbox\Programs\Data\start.txt (
 
-del start.txt
+del C:\Users\null\Dropbox\Programs\Data\start.txt
 
-start stop.bat
+start C:\Users\null\Dropbox\Programs\Bat\stop.bat
 
+echo %DATE% %TIME% run.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
 ) else (
 
-echo hello >> start.txt
+echo hello >> C:\Users\null\Dropbox\Programs\Data\start.txt
 
-start start.bat
+start C:\Users\null\Dropbox\Programs\Bat\start.bat
 
+echo %DATE% %TIME% run.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
 )
 
 )
 
-if exist beginning.txt (
+if exist C:\Users\null\Dropbox\Programs\Data\beginning.txt (
 
-del beginning.txt
+del C:\Users\null\Dropbox\Programs\Data\beginning.txt
 
-start beginning.bat
+start C:\Users\null\Dropbox\Programs\Bat\beginning.bat
 
+echo %DATE% %TIME% run.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
 )
 
-if exist end.txt (
+if exist C:\Users\null\Dropbox\Programs\Data\end.txt (
 
-del end.txt
+del C:\Users\null\Dropbox\Programs\Data\end.txt
 
-start end.bat
+start C:\Users\null\Dropbox\Programs\Bat\end.bat
 
+echo %DATE% %TIME% run.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
 )
 
-if exist encode.txt (
+if exist C:\Users\null\Dropbox\Programs\Data\encode.txt (
 
-del encode.txt
+del C:\Users\null\Dropbox\Programs\Data\encode.txt
 
-start encode.bat
+start C:\Users\null\Dropbox\Programs\Bat\encode.bat
 
+echo %DATE% %TIME% run.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
 )
 
-if exist retry.txt (
+if exist C:\Users\null\Dropbox\Programs\Data\clear.txt (
 
-del retry.txt
+del C:\Users\null\Dropbox\Programs\Data\clear.txt
 
-start retry.bat
+start C:\Users\null\Dropbox\Programs\Bat\clear.bat
 
+echo %DATE% %TIME% run.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
 )
 
-if exist clear.txt (
-
-del clear.txt
-
-start clear.bat
-
-)
-
+exit

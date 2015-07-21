@@ -10,4 +10,6 @@ rem timeout 20
 
 rem taskkill /f /im "lc3.exe"
 
+echo %DATE% %TIME% stop.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
+
 exit

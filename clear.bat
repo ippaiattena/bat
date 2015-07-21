@@ -2,7 +2,7 @@
 
 setlocal enabledelayedexpansion
 
-set ODIR=C:\Users\null\Capture
+set ODIR=C:\Users\null\Pictures\Capture
 set IDIR=C:\Users\null\Videos
 
 for /f "usebackq" %%i in (`dir %ODIR% /B *.mp4`) do (
@@ -21,5 +21,7 @@ del %IDIR%\!IFILE!
 )
 
 endlocal
+
+echo %DATE% %TIME% clear.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
 
 exit
