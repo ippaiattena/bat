@@ -28,6 +28,4 @@ del %IDIR%\!IFILE!
 
 endlocal
 
-echo %DATE% %TIME% encode.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
-
 exit

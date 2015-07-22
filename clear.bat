@@ -22,6 +22,4 @@ del %IDIR%\!IFILE!
 
 endlocal
 
-echo %DATE% %TIME% clear.bat >> C:\Users\null\Dropbox\Programs\Log\log.txt
-
 exit
